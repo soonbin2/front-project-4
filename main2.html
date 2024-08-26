@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         header{
+            margin: auto; /*header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
+            /* width: 1980px; */
+            height: 90px;
+            display: flex;
+            align-items: center; /*하위 요소들 수직 가운데정렬 */
+            position: relative;
+            background-color: #000000 ;
+            
+        }
+        img{
+            width: 80px;
+            height: 70px;
+            margin-left: 80px;
+            
+        }
+        .a{
+            font-size: 20px;
+            color:#FFFFFF;
+            
+        }
+        .ha{
+            margin-left: 30px; 
+        }
+        .b{
+            width: 20px;
+            border: 1px solid #FFFFFF;
+            margin-left: 20px;
+            margin-right:20px;
+        }
+        .c{
+            width: 73px;
+            height:31px;
+            background-color: #D9D9D9;
+            margin-left: 800px;
+            
+           
+        }
+        .d{
+            font-size: 16px;
+            
+        }
+        aside{
+            background: #f2f4f7;
+            height: 1000px;
+            width:400px;
+            /* display: flex;
+            align-items: center;
+            flex-direction: column; */
+        }
+        .e{
+            width: 250px;
+            border: 2px solid #000000;
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left:70px;
+        }
+        .f{
+            font-size: 25px;
+            margin-top: 100px;
+            margin-left: 80px;
+        }
+        .g{
+            width: 250px;
+            border: 1px solid #000000;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left:70px;
+        }
+        .h{
+            font-size: 20px;
+            margin-left:65px;
+            margin-top:20px;
+           
+        }
+        .i{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .j{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .k{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .l{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .m{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        button{
+           border:0;
+           /* outline:0; */
+        }
+        main{
+            background: #f2f4f7;
+            width: 1054px;
+            height: 1000px;
+            float:right;
+            
+            /* margin-left:400px;
+            margin-top:-1600px; */
+            
+        }
+        .new{
+            font-size: 20px;
+            margin-top: 100px;
+            font-weight: 800;
+            margin-bottom:20px
+       }
+       .block{
+        display:inline-block;
+       }
+       .img{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/7.jpg);
+        background-size: cover;
+       }
+       .img2{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/8.jpg);
+        background-size: cover;
+        margin-left: 40px;
+       }
+       .img3{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/9.jpg);
+        background-size: cover;
+        margin-left: 40px;
+       }
+       .img4{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/10.jpg);
+        background-size: cover;
+        margin-left: 40px;
+       }
+       .bin{
+        display:inline-block;
+        margin-top: 10px;
+       }
+       .test{
+        display: inline-block;
+       }
+       .size{
+        margin-left: 35px;
+       }
+       .crop{
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 800;
+        margin-bottom: 10px;
+       }
+       .price{
+        font-size: 20px;
+        
+        font-weight: 800;
+       }
+       .price2{
+        font-size:20px;
+        color:#646464;
+        margin-left: 10px;
+        text-decoration: line-through;
+       }
+       .price3{
+        font-size: 20px;
+        color:#F9060A;
+        font-weight: 800;
+        margin-left:10px;
+       }
+       .daily{
+        font-size: 16px;
+        color: #646464;
+
+       }
+       
+       .img5{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/11.jpg);
+        background-size: cover;
+        
+       }
+       .img6{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/12.jpg);
+        background-size: cover;
+        margin-left: 40px;
+       }
+       .img7{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/13.jpg);
+        background-size: cover;
+        margin-left: 40px;
+       }
+       .img8{
+        width:208px;
+        height:178px;
+        background-image: url(/front-end-project/14.jpg);
+        background-size: cover;
+        margin-left: 40px;
+       }
+       
+       .size2{
+        margin-left: 35px;
+       }
+       footer{
+        /* width: 1980px; */
+        height: 90px;
+        margin: auto;
+        /* padding: 0 8px 0 8px; 각각 위 오른쪽 아래 왼쪽 */
+        display: flex;
+        align-items: center;
+        flex-direction: column;  /*요소들을 수평정렬 */
+        font-size: 12px;
+        background-color: #000000 ;
+            
+       }
+       .footer{
+        font-size: 14px;
+        color:#FFFFFF;
+       }
+       .nub{
+        width: 24px;
+        height: 24px;
+        background-color: #0E9FFF;
+       }
+       .nut{
+        font-size: 14px;
+        color:#FFFFFF;
+        font-weight: 800;
+        margin-left: 8px;
+        /* margin-top:20px; */
+       }
+       .live{
+        margin-bottom: 20px;
+       }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg">
+        <span class="ha">
+            <span class="a">패션의 기본값</span>
+            <span class="b"></span>
+            <span class="a"> 관심고객수 25,989</span>
+        </span>
+        <div class="c" >
+            <!-- <div class="d">로그인</div> -->
+             <a href="id.html">로그인</a>
+        </div>
+    </header>
+    
+    <aside class="block">
+        <span class="e"></span>
+        <button class="f">DEFOULT STUDIO</button>
+        <span class="g"></span>
+        <button class="h">Best 8</button><br>
+        <button class="h">New !</button>
+        <div class="i">Top</div>
+        <div class="j">Bottom</div>
+        <div class="k">Outer</div>
+        <div class="l">Accessories</div>
+        <div class="m">Same-day shipment !</div>
+    </aside>
+    <main class="block">
+        <div class="new">Best</div>
+        <div class="live">실시간ㅣ일간ㅣ주간ㅣ월간</div>
+        <div class="img bin">
+            <div class="nub">
+                <span class="nut">1</span>
+            </div>
+        </div>
+        <div class="img2 bin">
+            <div class="nub">
+                <span class="nut">2</span>
+            </div>
+        </div>
+        <div class="img3 bin">
+            <div class="nub">
+                <span class="nut">3</span>
+            </div>
+        </div>
+        <div class="img4 bin">
+            <div class="nub">
+                <span class="nut">4</span>
+            </div>
+        </div>
+        <div class="test">
+            <span class="price">18,000원</span>
+            <div class="crop">서큘러 나염 하프 티셔츠</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>재입고완료! 당일발송중 입니다 :)</p>
+            <p class="daily">평점 4.83 리뷰 48</p>
+        </div>
+        <div class="test size">
+            <span class="price">59,500원</span>
+            <div class="crop">듀러블 패치 하프 워크 자켓</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>재입고완료! 당일발송중 입니다 :)</p>
+            <p class="daily">평점 4.7 리뷰 64</p>
+        </div>
+        </div>
+        <div class="test size">
+            <span class="price">15,000원</span>
+            <div class="crop">아칸소어 하프 티셔츠</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>아칸소어 하프 티셔츠</p>
+            <p class="daily">평점 5.0 리뷰 17</p>
+        </div>
+        </div>
+        <div class="test size">
+            <span class="price">14,000원</span>
+            <div class="crop">엑시드 롱 슬리브</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>엑시드 롱 슬리브</p>
+            <p class="daily">평점 4.91 리뷰 58</p>
+        </div>
+        </div>
+        
+        <div class="img5 bin">
+            <div class="nub">
+                <span class="nut">5</span>
+            </div>
+        </div>
+        <div class="img6 bin">
+            <div class="nub">
+                <span class="nut">6</span>
+            </div>
+        </div>
+        <div class="img7 bin">
+            <div class="nub">
+                <span class="nut">7</span>
+            </div>
+        </div>
+        <div class="img8 bin">
+            <div class="nub">
+                <span class="nut">8</span>
+            </div>
+        </div>
+        <div class="test">
+            <span class="price">19,000원</span>
+            <div class="crop">DS-1 기본형 뿔테 안경</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>뿔테-Black</p>
+            <p class="daily">평점 5.0 리뷰 12</p>
+        </div>
+        <div class="test size2">
+            <span class="price">49,000원</span>
+            <div class="crop">라벨 포켓 체크 셔츠</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>블루-레이어드 라벨 포켓 체크셔츠</p>
+            <p class="daily">평점 4.72 리뷰 12</p>
+        </div>
+        <div class="test size2">
+            <span class="price">39,800원</span>
+            <div class="crop">시에라 워싱 커팅 데님자켓</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>재고 소진! 예약구매가능</p>
+            <p class="daily">평점 4.86 리뷰 14</p>
+        </div>    
+        <div class="test size2">
+            <span class="price">39,000원</span>
+            <div class="crop">플로트 시어서커 체크 셔츠</div>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>민트 착용 소라 착용 </p>
+            <p class="daily">평점 5.0 리뷰 4</p>
+        </div>
+    </main>
+    <footer>
+        <p class="footer">대표 : 황순빈 &nbsp;주소 : 경기도 하남시 미사강변대로</p>
+        <p class="footer">전화 : 010-3955-2799 &nbsp;이메일 : ghkdtnsqls04@naver.com</p>
+    </footer>
+        
+    
+    
+</body>
+</html>

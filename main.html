@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         header{
+            margin: auto; /*header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
+            /* width: 1980px; */
+            height: 90px;
+            display: flex;
+            align-items: center; /*하위 요소들 수직 가운데정렬 */
+            position: relative;
+            background-color: #000000 ;
+            
+        }
+        img{
+            width: 80px;
+            height: 70px;
+            margin-left: 80px;
+            
+        }
+        .a{
+            font-size: 20px;
+            color:#FFFFFF;
+            
+        }
+        .ha{
+            margin-left: 30px; 
+        }
+        .b{
+            width: 20px;
+            border: 1px solid #FFFFFF;
+            margin-left: 20px;
+            margin-right:20px;
+        }
+        .c{
+            width: 73px;
+            height:31px;
+            background-color: #D9D9D9;
+            margin-left: 800px;
+            
+           
+        }
+        .d{
+            font-size: 16px;
+            
+        }
+        aside{
+            background: #f2f4f7;
+            height: 1400px;
+            width:400px;
+            /* display: flex;
+            align-items: center;
+            flex-direction: column; */
+        }
+        .e{
+            width: 250px;
+            border: 2px solid #000000;
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left:70px;
+        }
+        .f{
+            font-size: 25px;
+            margin-top: 100px;
+            margin-left: 80px;
+        }
+        .g{
+            width: 250px;
+            border: 1px solid #000000;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left:70px;
+        }
+        .h{
+            font-size: 20px;
+            margin-left:65px;
+            margin-top:20px;
+           
+        }
+        .i{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .j{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .k{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .l{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        .m{
+            font-size: 20px;
+            margin-left:70px;
+            margin-top:20px;
+        }
+        button{
+           border:0;
+           /* outline:0; */
+        }
+        main{
+            background: #f2f4f7;
+            width: 1054px;
+            height: 1400px;
+            float:right;
+            
+            /* margin-left:400px;
+            margin-top:-1600px; */
+            
+        }
+        .new{
+            font-size: 20px;
+            margin-top: 100px;
+            font-weight: 800;
+            margin-bottom:20px
+       }
+       .block{
+        display:inline-block;
+       }
+       .img{
+        width:286px;
+        height:332px;
+        background-image: url(/front-end-project/1.jpg);
+        background-size: cover;
+       }
+       .img2{
+        width:286px;
+        height:332px;
+        background-image: url(/front-end-project/2.jpg);
+        background-size: cover;
+        margin-left: 50px;
+       }
+       .img3{
+        width:286px;
+        height:332px;
+        background-image: url(/front-end-project/3.jpg);
+        background-size: cover;
+        margin-left: 50px;
+       }
+       .bin{
+        display:inline-block;
+       }
+       .test{
+        display: inline-block;
+       }
+       .size{
+        margin-left: 123px;
+       }
+       .crop{
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 800;
+        margin-bottom: 10px;
+       }
+       .price{
+        font-size: 20px;
+        
+        font-weight: 800;
+       }
+       .price2{
+        font-size:20px;
+        color:#646464;
+        margin-left: 10px;
+        text-decoration: line-through;
+       }
+       .price3{
+        font-size: 20px;
+        color:#F9060A;
+        font-weight: 800;
+        margin-left:10px;
+       }
+       .daily{
+        font-size: 16px;
+        color: #646464;
+
+       }
+       .img4{
+        width:286px;
+        height:332px;
+        background-image: url(/front-end-project/4.jpg);
+        background-size: cover;
+       }
+       .img5{
+        width:286px;
+        height:332px;
+        background-image: url(/front-end-project/5.jpg);
+        background-size: cover;
+        margin-left: 50px;
+       }
+       .img6{
+        width:286px;
+        height:332px;
+        background-image: url(/front-end-project/6.jpg);
+        background-size: cover;
+        margin-left: 50px;
+       }
+       .size2{
+        margin-left: 78px;
+       }
+       footer{
+        /* width: 1980px; */
+        height: 90px;
+        margin: auto;
+        /* padding: 0 8px 0 8px; 각각 위 오른쪽 아래 왼쪽 */
+        display: flex;
+        align-items: center;
+        flex-direction: column;  /*요소들을 수평정렬 */
+        font-size: 12px;
+        background-color: #000000 ;
+            
+       }
+       .footer{
+        font-size: 14px;
+        color:#FFFFFF;
+       }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg">
+        <span class="ha">
+            <span class="a">패션의 기본값</span>
+            <span class="b"></span>
+            <span class="a"> 관심고객수 25,989</span>
+        </span>
+        <div class="c" >
+            <!-- <div class="d">로그인</div> -->
+             <a href="id.html">로그인</a>
+        </div>
+    </header>
+    
+    <aside class="block">
+        <span class="e"></span>
+        <button class="f">DEFOULT STUDIO</button>
+        <span class="g"></span>
+        <button class="h">Best 8</button><br>
+        <button class="h">New !</button>
+        <div class="i">Top</div>
+        <div class="j">Bottom</div>
+        <div class="k">Outer</div>
+        <div class="l">Accessories</div>
+        <div class="m">Same-day shipment !</div>
+    </aside>
+    <main class="block">
+        <div class="new">New arrivals 8%</div>
+        <div class="img bin"></div>
+        <div class="img2 bin"></div>
+        <div class="img3 bin"></div>
+        <div class="test">
+            <div class="crop">릴레이어 크롭 트러커 자켓</div>
+            <span class="price">48,760원</span><span class="price2">53,000원</span><span class="price3">8%</span>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>브라운 릴레이어 크롭 트러커 자켓</p>
+        </div>
+        <div class="test size">
+            <div class="crop">트레일 생지 데님 팬츠</div>
+            <span class="price">42,320원</span><span class="price2">46,000원</span><span class="price3">8%</span>
+            <p class="daily">Daily cut 모델 착용 - L 사이즈 흑청<br>착용 트레일 생지 데님 팬츠</p>
+        </div>
+        <div class="test size">
+            <div class="crop">벌룬 핀턱 스웻 팬츠</div>
+            <span class="price">33,120원</span><span class="price2">36,000원</span><span class="price3">8%</span>
+            <p class="daily">Daily cut 모델 착용 - Free 사이즈<br>그레이 벌룬 핀턱 스웻 팬츠</p>
+        </div>
+
+        <div class="new">Same-day shipment !</div>
+        <div class="img4 bin"></div>
+        <div class="img5 bin"></div>
+        <div class="img6 bin"></div>
+        <div class="test">
+            <div class="crop">서펜 라인 나그랑 셔츠</div>
+            <span class="price">33,000원</span>
+            <p class="daily">Daily cut 버건디 색상만 오후 2시 이전<br>주문시 당일발송 가능 제품! 발송 후 1~2일<br>
+            이내로 받으십니다.</p>
+        </div>
+        <div class="test size2">
+            <div class="crop">어블릭 버튼 카고 팬츠</div>
+            <span class="price">39,000원</span>
+            <p class="daily">Daily cut 오후 2시 이전<br>주문시 당일발송 가능 제품! 발송 후 1~2일<br>
+            이내로 받으십니다.</p>
+        </div>
+        <div class="test size2">
+            <div class="crop">마티스 하프 티셔츠</div>
+            <span class="price">15,000원</span>
+            <p class="daily">Daily cut 오트밀 색상만 오후 2시 이전<br>주문시 당일발송 가능 제품! 발송 후 1~2일<br>
+                이내로 받으십니다.</p>
+        </div>
+    </main>
+    <footer>
+        <p class="footer">대표 : 황순빈 &nbsp;주소 : 경기도 하남시 미사강변대로</p>
+        <p class="footer">전화 : 010-3955-2799 &nbsp;이메일 : ghkdtnsqls04@naver.com</p>
+    </footer>
+        
+    
+    
+</body>
+</html>
