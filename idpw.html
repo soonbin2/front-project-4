@@ -5,32 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: #646464;
-            /* display: flex;
+        .a{
+            width:391px;
+            height:700px;
+            border-radius: 8px 8px 8px 8px;
+            border: 0px solid #000000;
+            margin-left:550px;
+            margin-top:50px;
+            display: flex;
             align-items: center;
-            flex-direction: column; */
+            flex-direction: column;
         }
         img{
-            width: 80px;
-            height: 70px;
+            width:80px;
+            height:70px;
+            margin-top:50px;
+            /* margin-left: -70px; */
+            
         }
-        .logo{
-            display:inline-block;
+        .df{
+            font-size: 25px;
+            margin-left: 100px;
+            margin-top: -50px;
+        
         }
-        .king{
+        .id{
+            font-size:16px;
+            margin-right: 235px;
+            margin-bottom: 10px;
+        }
+        .textinput{
+            width: 305px;
+            height: 60px;
+            /* border-color: #c3c3c3; */
+            border-radius: 8px 8px 8px 8px;
+            background-color: #c3c3c3;
+        }
+        .pw{
+            font-size:16px;
+            margin-top:20px;
+            margin-right: 220px;
+            margin-bottom: 10px;
+        }
+        #buttoninput{
+            width: 288px;
+            height: 48px;
+            background-color:#17B75E ;
+            color:#FFFFFF;
+            margin-top: 20px;
+            border-radius: 8px 8px 8px 8px;
+            border: 0px solid #000000;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .b{
+            font-size: 14px;
+            margin-top: 20px;
+            
+        }
+        body{
+            background-color: #c3c3c3;
+        }
+        
+        .man{
+            width: 310px;
+            height: 60px;
+            border: 1px solid #000000;
+            /* border-color: #c3c3c3; */
+            border-radius: 8px 8px 8px 8px;
+        }
+        .girl{
+            width: 120px;
+            height: 30px;
+            border: 1px solid #000000;
+            border-radius: 8px 8px 8px 8px;
+        }
+        .korean{
+            width: 150px;
+            height: 30px;
+            border: 1px solid #000000;
+            border-radius: 8px 8px 8px 8px;
+        }
+        .rd{
+            display: inline-block;
             margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 5px;
+            margin-bottom: 10px;
+        }
+        #finish{
+            width: 670px;
+            height: 341px;
+            background-color: #D9D9D9;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position:absolute;
+            margin-top: 100px;
+            display: none;
+            border-radius: 8px 8px 8px 8px;
+            border: 1px solid #000000;
+        }
+        .cf{
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .close{
+            width: 151px;
+            height: 54px;
+            background-color:#17B75E ;
+            color:#FFFFFF;
+            margin-top: 30px;
+            border-radius: 8px 8px 8px 8px;
+            border: 1px solid #000000;
+            font-size: 36px;
+            margin-left: 250px;
+            
+        }
+        button{
+            cursor: pointer;
+        }
+        .ib{
+            margin-bottom: 30px;
         }
         
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="logo.jpg">
+    <div class="a">
+        <div class="ib">
+            <img src="logo.jpg" alt="로고">
+            <p class="df">DEFOULT STUDIO</p>
+        </div>
+        
+        <input type="text" class="textinput" placeholder="아이디">
+        <input type="password" class="textinput" placeholder="비밀번호">
+        <input type="text" class="textinput" placeholder="이메일 주소 (비밀번호 찾기 등 본인 확인용)"><br>
+        <input type="text" class="textinput" placeholder="이름">
+        <input type="text" class="textinput" placeholder="생년월일 8자리">
+        <div class="man">
+            <div class="girl rd">
+                <input id="male" type="radio" name="sex"><label for="male">남자</label>
+                
+                <input id="female" type="radio" name="sex"><label for="female">여자</label>
+                
+            </div>
+            <div class="korean rd">
+                <input id="korean" type="radio" name="nation"><label for="korean">내국인</label>
+                <input id="foreigner" type="radio" name="nation"><label for="foreigner">외국인</label>
+            </div>
+            
+        </div>
+        <div id="finish" >
+            <div class="cf">회원가입이 완료되었습니다.</div>
+            <button class="close">닫기</button>
+        </div>
+        <input type="text" class="textinput" placeholder="휴대전화번호">
+        <button id="buttoninput">회원가입</button>
     </div>
-    <div class="logo king">
-        <div class="def">DEFOULT STUDIO</div>
-    </div>
-    
+    <script>
+        // var click2 = document.querySelector('.buttoninput');
+        // click2.addEventListener("click", () =>{
+        //         alert("회원가입이 완료되었습니다.")
+        //         location.href="id.html";
+        //     });
+        document.getElementById('buttoninput').addEventListener('click', function(){
+        document.getElementById('finish').style.display='block';
+        })
+        var click2 = document.querySelector('.close');
+        click2.addEventListener("click", () =>{
+                location.href="id.html";
+            });
+    </script>
 </body>
 </html>

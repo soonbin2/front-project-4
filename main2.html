@@ -68,6 +68,7 @@
             font-size: 25px;
             margin-top: 100px;
             margin-left: 80px;
+            background-color: #f2f4f7;
         }
         .g{
             width: 250px;
@@ -82,7 +83,7 @@
             font-size: 20px;
             margin-left:65px;
             margin-top:20px;
-           
+            background-color: #f2f4f7;
         }
         .i{
             font-size: 20px;
@@ -112,6 +113,7 @@
         button{
            border:0;
            /* outline:0; */
+           cursor: pointer;
         }
         main{
             background: #f2f4f7;
@@ -162,6 +164,7 @@
        .bin{
         display:inline-block;
         margin-top: 10px;
+        margin-bottom: 15px;
        }
        .test{
         display: inline-block;
@@ -261,29 +264,33 @@
        .live{
         margin-bottom: 20px;
        }
+       button:hover{
+        color: #188EE2;
+        
+       }
        
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg">
+        <img src="logo.jpg" alt="로고">
         <span class="ha">
             <span class="a">패션의 기본값</span>
             <span class="b"></span>
             <span class="a"> 관심고객수 25,989</span>
         </span>
-        <div class="c" >
-            <!-- <div class="d">로그인</div> -->
-             <a href="id.html">로그인</a>
-        </div>
+        <button class="c" >
+            <div class="d">로그인</div>
+            
+        </button>
     </header>
     
     <aside class="block">
         <span class="e"></span>
         <button class="f">DEFOULT STUDIO</button>
         <span class="g"></span>
-        <button class="h">Best 8</button><br>
-        <button class="h">New !</button>
+        <button class="h bt">Best 8</button><br>
+        <button class="h bt2">New !</button>
         <div class="i">Top</div>
         <div class="j">Bottom</div>
         <div class="k">Outer</div>
@@ -390,6 +397,24 @@
         <p class="footer">대표 : 황순빈 &nbsp;주소 : 경기도 하남시 미사강변대로</p>
         <p class="footer">전화 : 010-3955-2799 &nbsp;이메일 : ghkdtnsqls04@naver.com</p>
     </footer>
+    <script>
+        var click = document.querySelector('.f');
+        click.addEventListener("click", () =>{
+                location.href="main.html";
+            });
+        var click2 = document.querySelector('.bt');
+        click2.addEventListener("click", () =>{
+                location.href="main2.html";
+            });
+        var click3 = document.querySelector('.bt2');
+        click3.addEventListener("click", () =>{
+                location.href="main3.html";
+            });
+        var click4 = document.querySelector('.c');
+        click4.addEventListener("click", () =>{
+                location.href="id.html";
+            });
+    </script>
         
     
     

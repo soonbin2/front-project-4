@@ -20,6 +20,7 @@
             width:80px;
             height:70px;
             margin-top:50px;
+            
         }
         .df{
             font-size: 25px;
@@ -41,7 +42,7 @@
             margin-right: 220px;
             margin-bottom: 10px;
         }
-        .buttoninput{
+        #buttoninput{
             width: 288px;
             height: 48px;
             background-color:#17B75E ;
@@ -56,22 +57,98 @@
             margin-top: 20px;
             
         }
+        button{
+           border:0;
+           /* outline:0; */
+           background-color: #FFFFFF;
+           cursor: pointer;
+        }
+        #finish{
+            width: 670px;
+            height: 341px;
+            background-color: #D9D9D9;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position:absolute;
+            margin-top: 100px;
+            display: none;
+            border-radius: 8px 8px 8px 8px;
+            border: 1px solid #000000;
+        }
+        .cf{
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .close{
+            width: 151px;
+            height: 54px;
+            background-color:#17B75E ;
+            color:#FFFFFF;
+            margin-top: 30px;
+            border-radius: 8px 8px 8px 8px;
+            border: 1px solid #000000;
+            font-size: 36px;
+            margin-left: 250px;
+            
+        }
         
         
     </style>
 </head>
 <body>
     <div class="a">
-        <img src="logo.jpg">
+        <img src="logo.jpg" alt="로고">
         <p class="df">DEFOULT STUDIO</p>
         <div class="id">아이디</div>
         <input type="text" class="textinput">
         <div class="pw">비밀번호</div>
-        <input type="text" class="textinput">
-        <input type="button" class="buttoninput" value="로그인">
-        <span class="b">아이디 찾기ㅣ비밀번호 찾기ㅣ회원가입</span>
+        <input type="password" class="textinput">
+        <div id="finish" >
+            <div class="cf">로그인이 완료되었습니다.</div>
+            <button class="close">닫기</button>
+        </div>
+        <!-- <input type="button" class="buttoninput" value="로그인"> -->
+        <button id="buttoninput">로그인</button>
+        <span class="b"><button>아이디 찾기</button>ㅣ<button>비밀번호 찾기</button>ㅣ<button class="ck">회원가입</button></span>
         
         
     </div>
+    
+    <script>
+        var click = document.querySelector('.ck');
+        click.addEventListener("click", () =>{
+                location.href="idpw.html";
+            });
+        document.getElementById('buttoninput').addEventListener('click', function(){
+            document.getElementById('finish').style.display='block';
+        })
+        var click2 = document.querySelector('.close');
+        click2.addEventListener("click", () =>{
+                location.href="main.html";
+            });
+        
+        // $login=addEventListener("click",() =>{
+        //     if($finish.style.display='none'){
+        //         $finish.style.display='block';
+        //     }
+        //     else{
+        //         $finish.style.display='none';
+        //     }
+        // })
+        // function btnclick(){
+        //     const finish = document.getElementsByClassName('finish');
+
+        //     if(finish.style.visibility ==='hidden'){
+        //         finish.style.visibility='visible';
+        //     }else{
+        //         finish.style.visibility='hidden';
+        //     }
+        // }
+    </script>
 </body>
 </html>
