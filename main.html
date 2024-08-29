@@ -80,12 +80,7 @@
             flex-direction: column;
             margin-left:70px;
         }
-        .h{
-            font-size: 20px;
-            margin-left:65px;
-            margin-top:20px;
-            background-color: #f2f4f7;
-        }
+        
         .i{
             font-size: 20px;
             margin-left:70px;
@@ -249,10 +244,7 @@
         font-weight: 800;
         /* margin-top: 200px; */
        }
-       button:hover{
-        color: #188EE2;
-        
-       }
+       
        .sis2{
         width: 286px;
         height: 182px;
@@ -268,6 +260,45 @@
         margin-left: 120px;
         /* margin-top: 200px; */
         visibility: hidden;
+       }
+       #ho.hover{
+        color: #188EE2;
+        font-size: 25px;
+        margin-top: 100px;
+        margin-left: 80px;
+        background-color: #f2f4f7;
+       }
+       #ho{
+        font-size: 25px;
+        margin-top: 100px;
+        margin-left: 80px;
+        background-color: #f2f4f7;
+       }
+       #ho2.hover{
+        color: #188EE2;
+        font-size: 20px;
+        margin-left:65px;
+        margin-top:20px;
+        background-color: #f2f4f7;
+       }
+       #ho2{
+        font-size: 20px;
+        margin-left:65px;
+        margin-top:20px;
+        background-color: #f2f4f7;
+       }
+       #ho3.hover{
+        color: #188EE2;
+        font-size: 20px;
+        margin-left:65px;
+        margin-top:20px;
+        background-color: #f2f4f7;
+       }
+       #ho3{
+        font-size: 20px;
+        margin-left:65px;
+        margin-top:20px;
+        background-color: #f2f4f7;
        }
 
        
@@ -290,10 +321,10 @@
     
     <aside class="block">
         <span class="e"></span>
-        <button class="f" >DEFOULT STUDIO</button>
+        <button class="f" id="ho" >DEFOULT STUDIO</button>
         <span class="g"></span>
-        <button class="h bt">Best 8</button><br>
-        <button class="h bt2" >New !</button>
+        <button class="h bt" id="ho2">Best 8</button><br>
+        <button class="h bt2" id="ho3">New !</button>
         <div class="i">Top</div>
         <div class="j">Bottom</div>
         <div class="k">Outer</div>
@@ -383,6 +414,29 @@
         click5.addEventListener("click", () =>{
                 location.href="purchase.html";
             });
+        var box = document.getElementById('ho');
+        box.addEventListener('mouseover',function(){
+            box.setAttribute('class','hover');
+        });
+        box.addEventListener('mouseout',function(){
+            box.removeAttribute('class');
+        });
+        var box2 = document.getElementById('ho2');
+        box2.addEventListener('mouseover',function(){
+            box2.setAttribute('class','hover');
+        });
+        box2.addEventListener('mouseout',function(){
+            box2.removeAttribute('class');
+        });
+        var box3 = document.getElementById('ho3');
+        box3.addEventListener('mouseover',function(){
+            box3.setAttribute('class','hover');
+        });
+        box3.addEventListener('mouseout',function(){
+            box3.removeAttribute('class');
+        });
+    
+        
         
     </script>
         

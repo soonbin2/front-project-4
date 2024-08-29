@@ -239,7 +239,7 @@
        .price4{
         font-size: 16px;
         color: #646464;
-        margin-right: 30px;
+        /* margin-right: 30px; */
        }
        #buttoninput{
             width: 288px;
@@ -263,6 +263,62 @@
             font-size: 20px;
             margin-left: 100px;
         }
+        #finish{
+            width: 670px;
+            height: 341px;
+            background-color: #D9D9D9;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position:absolute;
+            margin-top: 200px;
+            display: none;
+            border-radius: 8px 8px 8px 8px;
+            border: 1px solid #000000;
+            margin-left: 100px;
+            
+        }
+        .cf{
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .close{
+            width: 151px;
+            height: 54px;
+            background-color:#17B75E ;
+            color:#FFFFFF;
+            margin-top: 30px;
+            border-radius: 8px 8px 8px 8px;
+            border: 1px solid #000000;
+            font-size: 36px;
+            margin-left: 250px;
+            
+        }
+        .go{
+            width: 20px;
+            height: 20px;
+            border:0px solid #000000;
+            background: #f2f4f7;
+            text-align: right;
+        }
+        .go2{
+            width:60px;
+            height:20px;
+            border:0px solid #000000;
+            background: #f2f4f7;
+            font-size: 20px;
+            color:#F9060A;
+            font-weight: 800;
+        }
+        /* ::placeholder{
+            font-size: 20px;
+            color:#F9060A;
+            font-weight: 800;
+        } */
        
        
     </style>
@@ -294,6 +350,10 @@
         <div class="m">Same-day shipment !</div>
     </aside>
     <main class="block">
+        <div id="finish" >
+            <div class="cf">구매가 완료되었습니다.</div>
+            <button class="close">닫기</button>
+        </div>
         <div class="pu img bin">
 
         </div>
@@ -310,29 +370,35 @@
             
             <p class="daily">배송비 3,000원</p>
             
-            <select class="color">
-                <option value="gi">컬러</option>
-                <option value="nv">베이지</option>
-                <option value="da">브라운 (품절)</option>
+            <select class="color" id="count" onchange="change()">
+                <option value="0개">컬러</option>
+                <option value="1개">베이지</option>
+                <option value="1개">브라운 (품절)</option>
                     
             </select>
-            <select class="color2">
-                <option value="gi">사이즈</option>
-                <option value="nv">S</option>
-                <option value="da">M</option>
-                <option value="da">L</option>
-                <option value="da">XL</option>
+            <select class="color2" id="count2" onchange="change2()">
+                <option value="0">사이즈</option>
+                <option value="48,760">S</option>
+                <option value="48,760">M</option>
+                <option value="48,760">L</option>
+                <option value="48,760">XL</option>
             </select>
+            
             <div>
                 <div class="percent">
                     <span class="crop">총 상품 금액</span>
                 </div>
                 <div class="percent air">
-                    <span class="price4">총 수량 0개</span><span class="price">0원</span>
+                    <label class="price4">총 수량</label><input  type="text" id ="show" class="go" placeholder="0개">
+                    <span>ㅣ</span>
+                    <input  type="text" id ="show2" class="go2" placeholder="0" style="text-align: right;"><label class="price">원</label>
+                    
                 </div>
             </div>
+            
             <button id="buttoninput">장바구니</button>
             <button id="buttoninput2">구매하기</button>
+            
             
         </div>
        
@@ -365,6 +431,23 @@
         click4.addEventListener("click", () =>{
                 location.href="id.html";
             });
+        document.getElementById('buttoninput2').addEventListener('click', function(){
+        document.getElementById('finish').style.display='block';
+            })
+        var click2 = document.querySelector('.close');
+        click2.addEventListener("click", () =>{
+                location.href="main.html";
+            });
+        
+        function change(){
+            var values =document.getElementById('count').value;
+            document.getElementById('show').value = values
+        }
+        function change2(){
+            var values2 =document.getElementById('count2').value;
+            document.getElementById('show2').value = values2
+        }
+            
         
     </script>
     
